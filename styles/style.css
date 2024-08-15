@@ -1,0 +1,141 @@
+*{
+  font-family: "Moderustic", sans-serif;
+}
+.display-flex{
+  display: flex;
+}
+/* header section */
+.ul-list{
+  text-decoration: none;
+  gap:20px;
+  list-style:none;
+}
+.nav-items{
+  justify-content: space-between;
+  text-decoration: none;
+  margin-right: 100px;
+  cursor: pointer;
+  font-weight: 900px;
+}
+.attributes{
+  text-decoration: none;
+  color: #000;
+}
+.header-first-div{
+  justify-content: space-between;
+}
+.heading-para{
+margin-left:50px;
+margin-top:20px;
+}
+.start-header{
+  font-size:3rem;
+  font-weight: 900px;
+}
+.camera-header{
+  margin-top: 20px;
+  background-image: url(../images/Circle\ design.svg);
+}
+.prebook-btn{
+  background-color:rgb(224,44,109);
+  color:white;
+  padding:10px 20px;
+  border-radius: 40px;
+  border-color:transparent;
+}
+.header-para{
+  justify-content: space-between;
+}
+.img-div{
+  justify-content: space-between;
+}
+.logos{
+  align-items: center;
+  justify-content: center;
+  border: .2px solid #e9e4e4;
+  width:950px;
+  height: 100px;
+  align-items: center;
+  gap:50px;
+  margin-left:90px
+}
+/* main section */
+.popular-header{
+  text-align: center;
+  margin-top:100px;
+  font-weight: 900px;
+  font-size: 2rem;
+}
+.collection-container{
+  display: grid;
+  grid-template-columns: repeat(3,3fr);
+  align-items: center;
+  justify-content:center;
+  margin-left:70px;
+  gap:30px;
+}
+.card{
+  width:300px;
+  border-radius: 5px;
+  box-shadow:0 4px 8px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition:transform 0.3s ease;
+  padding:25px;
+}
+.see-more{
+  color:rgb(231, 10, 91);
+  text-align: right;
+  margin-top:50px;
+  margin-right:40px;
+}
+.feature-container{
+  margin-top: 100px;
+  text-align: left;
+  justify-content:space-between;
+  align-items:space-between;
+  gap:50px;
+}
+.featured-image{
+  margin-left: 70px;
+  margin-right: 20px;
+}
+.join-btn{
+  background-color:rgb(224,44,109);
+  color:white;
+  padding:10px 20px;
+  border-color:transparent;
+}
+/*footer section */
+/* responsive section */
+@media screen and (max-width:575px){
+.header-first-div{
+  flex-direction: column;
+}
+.nav-items{
+  display: none;
+}
+.logos{
+  margin-top: 300px;
+  align-items: left;
+  flex-direction: column;
+margin-left:70px;
+  border:none;
+  width:none;
+  height:none;
+  align-items: flex-start;
+}
+.main-section{
+  margin-top: 300px;
+}
+.collection-container{
+  grid-template-columns: repeat(1,1fr);
+}
+/* feature container */
+.feature-container{
+  flex-direction:column;
+  margin-left: 15px;
+}
+.featured-image{
+  margin-left:10px;
+}
+}
